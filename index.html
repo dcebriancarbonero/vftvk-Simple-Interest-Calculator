@@ -1,16 +1,72 @@
+  
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="rounded_square">
 
-        <button onclick="compute()">Compute</button>
+            <header>
+                <h1>Simple Interest Calculator</h1>
+            </header>
+    
+            <form>
+
+                <label class="amount">
+                    <span>Amount</span>
+                    <input type="text" id="amount_input" name="amount_input" />
+                </br>
+                </label>
+    
+                <label class="rate">
+                    <span>Interest Rate</span>
+                    <input type="range" class="rate_input" name="rate_input" min="0" max="20" step="0.1" onchange="document.getElementById('outrange').value=value">
+                    <output id="outrange" name="outrange" for="rate_input">10.50</output>%
+                </br>
+                </label>
+    
+                <label class="amount">
+                    <span>No. of Years</span>
+                    <select name="years_select" id="years_select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </br>
+                </label>
+    
+            </form>
+
+            <div class="compute">
+                <input onclick="myFunction()" type="submit" value="Compute Interest" />
+            </div>
+            </br>
+
+            <label id="answer1">
+            </label>
+            <label id="answer2">
+            </label>
+            <label id="answer3">
+            </label>
+            <label id="answer4">
+            </label>
+    
+            <footer>
+    
+                <h5> 	&copy;Everyone Can Get Rich </h5>
+    
+            </footer>
+
+        </div>
+
     </body>
 </html>
