@@ -1,4 +1,66 @@
-body {background-color:tan;}
-h1{color:green;}
+body{
+    background-color: black;
+}
 
+.rounded_square{
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 550px;
+    padding-bottom: 5%;
+    background: whitesmoke;
+}
 
+header{
+    color:grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 8%;
+    
+}
+
+label
+{
+    display: block;
+    margin: 20px 0px;
+    padding-left: 8%;
+}
+
+::after{
+    content: attr(value);
+}
+
+label span
+{
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+    padding-left: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.compute{
+    padding-left: 22%;
+}
+
+#answer1{
+    padding-left: 22%;
+}
+
+#answer2{
+    padding-left: 22%;
+}
+
+#answer3{
+    padding-left: 22%;
+}
+
+#answer4{
+    padding-left: 22%;
+}
+
+footer{
+    height: 20px;
+    padding-left: 8%;
+    padding-top: 2%;
+}
